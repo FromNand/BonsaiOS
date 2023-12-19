@@ -3,7 +3,7 @@ SHELL = /bin/bash
 all:
 	mkdir -p image/EFI/BOOT
 	cd $$HOME/edk2 && source edksetup.sh && build
-	cp $$HOME/edk2/Build/BootLoaderPkg/RELEASE_CLANG38/X64/BootLoader.efi image/EFI/BOOT/BOOTX64.EFI
+	cp $$HOME/edk2/Build/BootLoaderPkg/DEBUG_CLANG38/X64/BootLoader.efi image/EFI/BOOT/BOOTX64.EFI
 	clang++ -Wall -c main.cpp
 	ld.lld -e KernelMain main.o -o image/kernel.elf
 

@@ -3,7 +3,7 @@
     PLATFORM_GUID           = 534a8974-ad67-4541-8758-b0f98d04cf0a
     PLATFORM_VERSION        = 1.0
     SUPPORTED_ARCHITECTURES = X64
-    BUILD_TARGETS           = RELEASE|NOOPT
+    BUILD_TARGETS           = DEBUG|RELEASE|NOOPT
 
 [LibraryClasses]
     BaseLib|MdePkg/Library/BaseLib/BaseLib.inf
